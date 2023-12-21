@@ -1,5 +1,7 @@
 - hosts: all
-  become: true
+  become: yes
+  become_method: sudo
+  become_user: ubuntu
   tasks: 
    # - name: delete old deployment
    #  command: kubectl delete -f /home/ubuntu/Deployment.yml
